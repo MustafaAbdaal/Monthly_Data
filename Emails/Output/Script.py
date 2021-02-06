@@ -70,8 +70,6 @@ TVOC = dict.fromkeys(Locations)
 TVOC['Date'] = None
 CO2 = dict.fromkeys(Locations)
 CO2['Date'] = None 
-# problem is here, it's all linking to locations and that's making them sync instead of stay seperate
-# We gotta try using lists instead, since they arent being ordered on this either. 
 
 Particles = [PM25, PM10, HCHO, TVOC, CO2]
 
@@ -138,7 +136,6 @@ for i in file:
             PM10_Dates[int(Date[-2:])][ID] = Average
             PM10_Dates[int(Date[-2:])]['Date'] = Date
             
-            # copy and deep copy have the same effect of rn...
             
             
         elif Sensor == 'TVOC':
