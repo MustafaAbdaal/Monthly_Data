@@ -167,8 +167,6 @@ for i in file:
         csv_file.close()
         
 print(PM25_Dates.keys())
-print(PM25_Dates[18])
-print(PM25_Dates[19])
 print(PM10_Dates.keys())
 print(HCHO_Dates.keys())
 print(CO2_Dates.keys())
